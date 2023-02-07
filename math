@@ -1,0 +1,17 @@
+from math import *
+
+#goniometrické funkce
+print(sin(90))  #cos, tan   - argument musí být v radiánech
+print(sin(radians(90)))     #převod na radiány
+
+#odmocnina
+print(sqrt(25))
+
+#ludolfovo číslo
+print(pi)
+
+#eulerovo číslo
+print(e)
+
+#n! - faktoriál
+print(factorial(5))
