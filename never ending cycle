@@ -1,0 +1,75 @@
+#příkazy řízení běhu cyklu
+#continue - ukončí právě probíhající opakování cyklu
+#break - ukončí cyklus
+
+#př.:
+"""
+for i in range(1,1000):
+    if i%3==0:
+        print("hups")
+        continue
+    if i>20:
+        print("konec")
+        break
+    print(i)
+
+
+c=10
+while c>0:
+    print(c)
+    c=c-1
+    if c==5:
+        break
+print("konec")
+
+
+c=10
+while c>0:
+    c=c-1
+    if c==5:
+        continue
+    print(c)
+print("konec")
+
+
+import random as rnd
+
+x=1
+while x!=10:
+    x=rnd.randint(2,20)
+    if x%2==0:
+        continue
+    print(x)
+    if x==5:
+        break
+"""
+
+#nekonečný cyklus
+"""
+k=10
+while True:
+    cislo=int(input("zadej číslo: "))
+    if cislo!=k:
+        print("Vedle")
+    else:
+        print("Trefa!!!!")
+        break
+"""
+
+#tvorba menu (jedna z možností) s nekonečným cyklem 
+
+while True:
+    print("Výběr: ")
+    print("1 - volba 1")
+    print("2 - volba 2")
+    print("3 - volba 3")
+    volba=int(input("Zadej svou volbu: "))
+    if volba==1:
+        print("a")
+    elif volba==2:
+        print("b")
+    elif volba==3:
+        print("c")
+    else:
+        print("konec")
+        break
