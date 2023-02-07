@@ -1,0 +1,45 @@
+#metody
+#náhrada textu - replace(vyhledávaný řetězec, řetězec pro nahrazení)
+"""
+#př.: 
+ret="Jedna dvě, Honza jde, nese pytel s brouky"
+print(ret.replace("s brouky","mouky"))
+ret2="haf, ňaf, blaf, řekl pejsek"
+print(ret2.replace("af","afiky")) #nahradí všechny výskyty
+print(ret2.replace("af","afiky",1)) #nahradí první výskyt
+
+
+#vyhledávání v textu - find(podřetězec)
+ret="toto je dlouhý řetězec, v kterém je podřetězec"
+print(ret.find("moc"))
+print(ret.find("řetězec"))
+
+
+#změna velikosti písmen
+text="TEXT pro záměnu MALÝCH velkých pÍSmen"
+print("Všechna malá:",text.lower())
+print("Všechna velká:",text.upper())
+print("První velké:",text.capitalize())
+print("záměna malá/velká:",text.swapcase())
+
+
+#funkce pro operace se znaky
+#ord(c) - převádí znak c na celé číslo (dle ASCII)
+#chr(i) - převádí celé číslo i na znak (dle ASCII)
+
+print("ASCII kód znaku A =",ord("A"))
+print("Pod kódem 64 je",chr(64))
+"""
+#operace nad znaky
+#zjištění existence znaku v textu
+veta="kobyla má malý bok"
+if "m" in veta:
+    print("je tam")
+
+#procházení textem znak po znaku
+pa=0
+veta=veta.lower()
+for znak in veta:
+    if znak=="a" or znak=="á":
+        pa+=1
+print("pořet písmen \"a\":",pa)
