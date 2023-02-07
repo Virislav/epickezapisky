@@ -1,0 +1,39 @@
+#cyklus for - operace s řetězcem znaků
+"""
+#procházení po znacích
+for i in "Olomouc":
+    print(i)
+
+
+#Načteme řetězec a vypíšeme ho tak, že mezi znaky bude *
+ret=input("Zadej slovo: ")
+for i in ret:
+    print(i+"*",end="")
+
+
+#Načteme řetězec a spočítáme, kolik obsahuje písmen "a"
+ret=input("Zadej slovo: ")
+p=0
+for i in ret:
+    if i=="a":
+        p=p+1
+print("Počet písmen a:",p)
+
+
+#Vnořené cykly
+#Vykreslíme čtverec 5x5 hvězdiček
+n=5
+for i in range(n):
+    for j in range(n):
+        print("*",end="  ")
+    print()
+"""
+
+#Čtyřúhelník se zadáním velikosti
+x=int(input("Zadej počet znaků na řádek: "))
+y=int(input("Zadej počet řádků: "))
+z=input("Zadej znak: ")
+for i in range(y):
+    for j in range(x):
+        print(z,end=" ")
+    print()
