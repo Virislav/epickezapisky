@@ -1,0 +1,118 @@
+"""
+#seznamy - píší se do [], prvky se oddělují čárkou, mohou obsahovat libovolná data
+
+#vytvoření seznamu a základní manipulace
+
+seznam=[]
+print(seznam)
+
+seznam=[3,"python",3.0]
+print(seznam)
+
+#prvky jsou indexovány (očíslovány), první prvek má index 0
+print(seznam[1])
+
+seznam[2]="únor"
+print(seznam)
+
+#sčítání seznamů
+seznam=seznam+[1,2,3]
+print(seznam)
+
+#násobení celým číslem
+seznam=seznam*2
+print(seznam)
+
+#výřezy ze seznamu
+seznam=[0,1,2,3,4,5,6,7,8,9]
+print(seznam[:4])
+print(seznam[-4:])
+print(seznam[4:])
+print(seznam[1:6])
+print(seznam[1:8:2])
+
+#operace se seznamy
+ovoce=["jablka","hrušky","třešně"]
+
+ovoce.append("maliny")  
+print(ovoce)
+
+ovoce=ovoce+["višně"]       #jiné přídání do seznamu
+print(ovoce)
+
+ovoce.insert(0,"meruňky")   #vkládá prvek na index 0 (začátek)
+ovoce.insert(4,"broskve")   #vkládá prvek na index 4 (pátá pozice)
+print(ovoce)
+
+ovoce.pop(1)                #smaže prvek s indexem 1
+print(ovoce)
+ovoce.pop()                 #smaže poslední prvek
+print(ovoce)
+
+x=ovoce.count("maliny")     #počet daných prvků v seznamu
+print(x)
+
+if ovoce.count("meloun")>0: #if "meloun" in ovoce:
+    ovoce.remove("meloun")  #odstranění prvku ze seznamu
+print(ovoce)
+
+ovoce.sort()                #seřazení seznamu
+print(ovoce)
+
+ovoce.reverse()             #otočení seznamu
+print(ovoce)
+
+delka=len(ovoce)            #délka seznamu (počet prvků)
+print(delka)
+
+#procházení seznamem
+ovoce=["jablka","hrušky","třešně"]
+for i in ovoce:
+    print("Mé ovoce: ",i)
+    x=ovoce.index(i)        #zjištění indexu (pozice) daného prvku
+    print("V seznamu je na {}. místě\n.".format(x+1))
+
+
+#příklady:
+#1: načteme 5 čísel, přidáme je do seznamu a vypíšeme
+seznam=[]
+for i in range(5):
+    x=int(input("zadej číslo: "))
+    seznam.append(x)
+print(seznam)
+
+#2: seznam s 10 náhodnými čísly
+import random as rn
+
+seznam=[]
+for i in range(10):
+    x=rn.randint(-50,50)
+    seznam.append(x)
+print(seznam)
+
+#3:z tohoto seznamu vytvořte nový s dvojnásobky hodnot
+seznam2=[]
+for i in seznam:
+    seznam2.append(i*2)
+print(seznam2)
+
+#4: z pevného seznamu vytvořte nový jen s kladnými čísly
+seznamK=[]
+for i in seznam:
+    if i>0:
+        seznamK.append(i)
+print(seznamK)
+"""
+#5: počet dnů náhodného měsíce (variace na příklad z náhodných čísel)
+import random as rn
+mesice=["leden","unor","březen","duben","květen","červen","červenec","srpen","září","říjen","listopad","prosinec"]
+mesic=rn.choice(mesice)
+print(mesic)
+poradi=mesice.index(mesic)
+if poradi==1:
+    dny=28
+elif poradi==3 or poradi==5 or poradi==8 or poradi==10:
+    dny=30
+else:
+    dny=31
+print(mesic,"má",dny,"dnů")
