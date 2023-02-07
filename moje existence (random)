@@ -1,0 +1,50 @@
+#Náhodná čísla - knihovna random
+import random as rn
+"""
+#generování celého čísla ze zadaného rozsahu
+x=rn.randint(1,50)
+print(x)
+
+
+#př.: náhodný trojúhelník
+a=rn.randint(1,20)
+b=rn.randint(1,20)
+c=rn.randint(1,20)
+if (a<b+c)and(b<a+c)and(c<b+c):
+    print("Ze stran",a,b,c,"lze sestrojit trojúhelník")
+else:
+    print("Ze stran",a,b,c,"nelze sestrojit trojúhelník")
+
+#další funkce z knihovny
+
+
+print("Reálné číslo od 0,1:",rn.random())
+print("Reálné číslo z rozsahu:",rn.uniform(20,80))  #x<=cislo<y
+print("Celé číslo od 0 do zadané hodnoty:",rn.randrange(20))
+print("Celé číslo z rozsahu s krokem:",rn.randrange(2,100,2))
+print("Náhodný znak ze sekvence znaků:",rn.choice("aeiouy"))
+print("Náhodný prvek ze seznamu:",rn.choice(["první","druhý","třetí"]))
+print("Zadaný počet prvků seznamu:",rn.sample([1,3,5,7,11,13,17],3))
+"""
+
+#Př.: Náhodný text (3 znaky)
+kod=""  #prázdný řetězec
+Text="abcdefghijklmnopqrstuvwxyz"
+pismeno=rn.choice(Text) #vygenerujeme náhodný znak
+kod=pismeno             #přičteme znak do proměnné kod
+pismeno=rn.choice(Text) 
+kod+=pismeno            #kod=kod+pismeno
+pismeno=rn.choice(Text) 
+kod+=pismeno
+print(kod)
+"""
+
+#Př.: Kolik má měsíc dnů (měsíc generujeme náhodně jako číslo)
+mesic=rn.randint(1,12)
+print(mesic)
+if mesic==2:
+    print("28 dnů")
+elif mesic==4 or mesic==6 or mesic==9 or mesic==11:
+    print("30 dnů")
+else:
+    print("31 dnů")
