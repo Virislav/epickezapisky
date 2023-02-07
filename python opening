@@ -1,0 +1,67 @@
+""""
+x=1     #celé číslo
+a=b=c=0 #vícenásobné přiřazení do proměnných
+m=2.3   #reálné číslo
+n=2.5E210
+y=1e-25
+t="text"
+
+#výpis na obrazovka - print()
+print(m)
+print(n)
+print("výpočet:",x,"výpočet2:",a)
+print(m,end=" ")
+print(y)
+
+
+#vstup dat - input
+a=input("zadej hodnotu: ")  #načítá textový řetězec
+print(a+a)  
+
+
+#vstup celého čísla - int
+x=int(input("zadej celé číslo"))
+print(x+x)
+
+
+#vstup reálného čísla - float
+y=float(input("zadej číslo: "))
+print(y)
+
+
+#aritmetické operace
+# + sčítání
+# - odčítání
+# * násobení
+# / dělení
+# // celočíselné dělení
+# % zbytek po celočíselném dělení
+
+print(10+5)
+print(10-5)
+print(10*5)
+print(10/5)
+print(11//2)
+print(11%2)
+print((3+5)*4)
+
+
+#součet, rozdíl, součin a podíl dvou čísel
+x=int(input("zadej první číslo: "))
+y=int(input("zadej druhé číslo: "))
+print("součet =",x+y)
+print("rozdíl =",x-y)
+print("součin =",x*y)
+print("podíl =",x/y)
+"""
+
+#zkrácený zápis
+a=5
+a+=1        #a=a+1
+print(a)
+a-=1        #a=a-1
+print(a)
+a*=2        #a=a*2
+print(a)
+a/=2        #a=a/2
+print(a)
