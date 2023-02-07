@@ -1,0 +1,52 @@
+#větvení (podmínky, rozhodování)
+"""
+if podmínka:
+    příkazy1
+else:
+    příkazy2
+
+podmínka = logický výraz (platí-neplatí,pravda-nepravda,ano-ne,True-False)
+relační operátory: >,<,>=,<=,==,!= (nerovná se)     např.: a>0
+logické operátory: and (logický součin), or (logický součet), not (negace)
+                    např.: (a>0)and(b>0)
+
+
+#př.:Shodnost dvou čísel
+a=int(input("Zadej první číslo: "))
+b=int(input("Zadej druhé číslo: "))
+if a==b:
+    print("Stejná")
+else:
+    print("různá")
+
+
+if podmínka1:
+    příkazy1
+elif podmínka2:
+    příkazy2
+elif podmínka3:
+...
+else:
+    příkazyN
+
+
+#př.:Je číslo kladné nebo záporné?
+cislo=int(input("Zadej číslo: "))
+if cislo>0:
+    print("Kladné")
+elif cislo==0:
+    print("je to nula looool")
+else:
+    print("je záporné")
+
+
+#př.:Seřazení dvou čísel vzestupně
+a=int(input("Zadej první číslo: "))
+b=int(input("Zadej druhé číslo: "))
+if a>b:
+    p=a
+    a=b
+    b=p
+    #nebo a,b=b,a
+print(a,b)
+"""
